@@ -47,8 +47,8 @@ function EmailPage() {
   const [purpose, setPurpose] = useState("");
   const [recipient, setRecipient] = useState("");
   const [keyPoints, setKeyPoints] = useState("");
-  const [tone, setTone] = useState(TONES[0]);
-  const [length, setLength] = useState(LENGTHS[1]);
+  const [tone, setTone] = useState<string>("Formal");
+  const [length, setLength] = useState<string>("Medium");
   const [output, setOutput] = useState("");
   const [loading, setLoading] = useState(false);
 
